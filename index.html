@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Example</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section id="page-info"></section>
+    <section id="form-content">
+      <div id="form-info">
+        <p>Hello</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+          blanditiis accusantium nulla, magni fugit cum molestias iure sint
+          architecto nisi, repellendus voluptates quas consectetur. Mollitia
+          numquam obcaecati eos velit hic?
+        </p>
+      </div>
+      <form novalidate>
+        <div id="form-fields">
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+            <p class="field-status"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="country">Select Your Country</label>
+            <select name="country" id="country" required>
+              <option value="" disabled selected>Select a Country</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="GB">United Kingdom</option>
+              <option value="AU">Australia</option>
+              <option value="DE">Germany</option>
+              <option value="FR">France</option>
+              <option value="IT">Italy</option>
+              <option value="JP">Japan</option>
+              <option value="CN">China</option>
+              <option value="IN">India</option>
+            </select>
+            <p class="field-status"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="zip">ZIP</label>
+            <input type="number" name="zip" id="zip" required />
+            <p class="field-status"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              required
+            />
+            <p class="field-status"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="password-confirm">Confirm Password</label>
+            <input
+              type="password"
+              name="password-confirm"
+              id="password-confirm"
+              minlength="8"
+              required
+            />
+            <p class="field-status"></p>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>
